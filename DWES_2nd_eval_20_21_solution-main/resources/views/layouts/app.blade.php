@@ -62,9 +62,9 @@
           </div>
 
           <div class="links">
-              <a href="/">@lang('messages.future_flights')</a>
-              <a href="#">@lang('messages.flight_passengers')</a>
-              <a href="#">@lang('messages.administration')</a>
+                <a href="{{route('futuros')}}">@lang('messages.future_flights')</a>
+                <a href="{{route('buscar')}}">@lang('messages.flight_passengers')</a>
+                <a href="{{route('navegar')}}">@lang('messages.administration')</a>
           </div>
           <hr><br><br>
 					<div class="op">

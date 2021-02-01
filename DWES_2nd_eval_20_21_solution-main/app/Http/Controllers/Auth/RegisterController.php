@@ -53,6 +53,11 @@ class RegisterController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'phone' => ['required', 'integer', 'max:15'],
+            'date_of_birth' => ['required', 'date', 'before:1/1/2002'],
+            'rol' => 'usuario',
+            //Le daremos por defecto a todos los usuarios el rol de usuario. Para dar el de administrador cambiar en la base de datos.
+
         ]);
     }
 
@@ -73,6 +78,7 @@ class RegisterController extends Controller
             'phone' => $data['phone'],
             'date_of_birth' => $data['date_of_birth'],
             'gender' => $data['gender'],
+            'rol' => 'usuario',
         ]);
     }
 }

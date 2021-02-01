@@ -11,7 +11,7 @@ return [
     | The following language lines are used in the main app.
     |
     */
-    'main_title' => 'Write your name',
+    'main_title' => 'Miguel Zabal',
     'main_text'  => 'Welcome to McFly, your flight agency from the future!',
     'exam' => 'EXAM',
     'future_flights' => 'Future flights',
